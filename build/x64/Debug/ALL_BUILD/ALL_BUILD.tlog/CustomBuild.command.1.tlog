@@ -1,0 +1,10 @@
+^C:\USERS\BRENN\ONEDRIVE\DESKTOP\GITHUB\GAMES\C++\INTRO C++\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/brenn/OneDrive/Desktop/GitHub/Games/c++/Intro C++" "-BC:/Users/brenn/OneDrive/Desktop/GitHub/Games/c++/Intro C++/build" --check-stamp-file "C:/Users/brenn/OneDrive/Desktop/GitHub/Games/c++/Intro C++/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^C:\USERS\BRENN\ONEDRIVE\DESKTOP\GITHUB\GAMES\C++\INTRO C++\BUILD\CMAKEFILES\9A373B5F24A3C6367598E94240710706\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\Microsoft Visual Studio\18\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SC:/Users/brenn/OneDrive/Desktop/GitHub/Games/c++/Intro C++" "-BC:/Users/brenn/OneDrive/Desktop/GitHub/Games/c++/Intro C++/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/brenn/OneDrive/Desktop/GitHub/Games/c++/Intro C++/build/HelloWorld.slnx"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
